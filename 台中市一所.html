@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- 宣告使用 HTML5；DOCTYPE 是文件類型宣告，不需要結束標籤。 -->
+<html lang="zh-Hant">
+<!-- html 包住整份文件；lang="zh-Hant" 表示主要使用繁體中文。 -->
+<head>
+    <!-- head 放網頁資訊；這些資訊不會直接成為頁面中的報導文字。 -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 可正確處理中文；meta 是空元素，不寫結束標籤。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport 讓行動裝置使用裝置寬度。 -->
+    <meta name="description" content="走進臺中市役所，認識百年歷史建築、古典圓頂與舊城區文化，透過清單、表格、照片和文字閱讀城市故事。">
+    <!-- description 提供網頁摘要；author 標示作者。 -->
+    <meta name="author" content="HTML 課程示範作者">
+    <title>臺中市役所報導｜百年歷史建築的華麗風華</title>
+    <!-- title 顯示在瀏覽器分頁；與 body 中的 h1 用途不同。 -->
+</head>
+
+<body>
+    <!--
+        第四次作業：一頁式臺中市役所報導。
+        本範例僅使用 HTML，保留瀏覽器預設呈現，不加入 CSS 或 JavaScript。
+    -->
+
+    <!-- header 是頁首；id="top" 是下方「回到頁首」連結的目的地。 -->
+    <header id="top">
+        <!-- h1 是本頁主標題；h2 用於各章節，依內容階層選用標題。 -->
+        <h1>臺中市役所：百年歷史建築的華麗風華</h1>
+        <p>從仿巴洛克古典圓頂到舊城文化重生，一起閱讀台中的行政官署記憶。</p>
+        <!-- time 的 datetime 以標準日期格式提供機器可讀的日期。 -->
+        <p>作者：d1446715 楊晏慈｜報導整理日期：<time datetime="2026-10-07">2026 年 10 月 7 日</time></p>
+        <p><small>本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+    </header>
+
+    <!-- nav 表示導覽區；href="#名稱" 會跳到本頁相同 id 的元素。 -->
+    <nav aria-label="報導目錄">
+        <h2>報導目錄</h2>
+        <ul>
+            <li><a href="#intro">市役所簡介</a></li>
+            <li><a href="#highlights">建築特色與參觀順序</a></li>
+            <li><a href="#table">空間特色比較表</a></li>
+            <li><a href="#photo">市役所照片</a></li>
+            <li><a href="#video">影音報導</a></li>
+            <li><a href="#sources">資料來源</a></li>
+        </ul>
+    </nav>
+
+    <!-- hr 表示內容主題的分隔，也是沒有結束標籤的空元素。 -->
+    <hr>
+
+    <!-- main 包住本頁主要內容；article 表示可獨立閱讀的完整報導。 -->
+    <main>
+        <article aria-label="臺中市役所專題報導">
+            <!-- section 將報導分成有標題的章節；同一頁中的 id 不可重複。 -->
+            <section id="intro">
+                <h2>一、市役所簡介</h2>
+                <!-- p 表示段落；strong 強調重要資訊，不用來取代標題。 -->
+                <p>
+                    臺中市役所位於臺中市西區，興建於 <strong>1911 年（明治 44 年）</strong>，
+                    最初作為「臺中廳公共埤圳聯合會事務所」使用。隨著 1920 年實施市制後，
+                    正式改為臺中市的行政官署（市役所），見證了日治時期至今的城市發展。
+                </p>
+                <p>
+                    建築風格融合了西洋古典主義與巴洛克裝飾，特別是其醒目的<strong>中央圓頂</strong>
+                    與紅磚白飾帶設計，在日治時期被譽為全臺最華麗的市役所之一，
+                    並於 2002 年被登錄為臺中市歷史建築。
+                </p>
+                <p>
+                    從歷史官署到如今的藝文與餐飲複合空間，臺中市役所宛如一本立體的城市建築辭典。
+                    本篇以特色整理與建議參觀順序，介紹這棟百年地標。
+                </p>
+                <!-- br 僅用於同段文字中需要的換行 -->
+                <p>建築地址：臺中市西區民權路 97 號。<br>閱讀重點：歷史建築、古典圓頂與舊城活化。</p>
+            </section>
+
+            <section id="highlights">
+                <h2>二、建築特色與參觀順序</h2>
+                <h3>值得留意的三個特色</h3>
+                <!-- ul 是無序清單 -->
+                <ul>
+                    <li><strong>建築結構：</strong>為臺中地區最早出現的鋼筋混凝土造建築物。</li>
+                    <li><strong>古典外觀：</strong>具備馬薩式屋頂、愛奧尼柱式與華麗的圓頂造型。</li>
+                    <li><strong>空間活化：</strong>戰後曾作為多個機關使用，現已轉型為融合藝文與餐飲的空間。</li>
+                </ul>
+
+                <h3>建議參觀順序</h3>
+                <p>以下是本報導規劃的參觀建議，並非官方指定路線。</p>
+                <!-- ol 是有序清單 -->
+                <ol>
+                    <li>抵達民權路外側，先欣賞市役所轉角處的挑高門廊與古典立面。</li>
+                    <li>走入建築內部，感受挑高空間及融合現代與歷史的裝潢細節。</li>
+                    <li>參觀二樓的藝文展覽空間，了解舊城區的歷史脈絡。</li>
+                    <li>前往後方或周邊散步，結合鄰近的臺中州廳進行舊城漫步。</li>
+                </ol>
+            </section>
+
+            <section id="table">
+                <h2>三、空間特色比較表</h2>
+                <table border="1">
+                    <!-- caption 是表格標題，放在 table 內最前面。 -->
+                    <caption>臺中市役所三處空間區域的特色與觀察重點</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">空間區域</th>
+                            <th scope="col">主要特色</th>
+                            <th scope="col">建議觀察重點</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">中央圓頂與立面</th>
+                            <td>融合巴洛克風格的華麗外觀</td>
+                            <td>愛奧尼柱式、拱頂石與馬薩式屋頂</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">室內展覽空間</th>
+                            <td>保留歷史結構的藝文展示區</td>
+                            <td>木骨灰泥壁體與空間活化再利用</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">周邊廣場腹地</th>
+                            <td>緊鄰舊城核心的歷史廊帶</td>
+                            <td>與鄰近臺中州廳的歷史街區氛圍</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="photo">
+                <h2>四、市役所照片</h2>
+                <figure>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Taichung_City_Hall_1911_20150228.jpg"
+                        alt="臺中市役所建築外觀"
+                        width="480">
+                    <figcaption>
+                        臺中市役所是臺中市重要的百年歷史建築。
+                        圖片來源：<a href="https://commons.wikimedia.org/wiki/File:Taichung_City_Hall_1911_20150228.jpg" target="_blank" rel="noopener noreferrer">维基共享资源（CC BY-SA 4.0）</a>。
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="video">
+                <h2>五、影音報導</h2>
+                <p>透過下方影片認識臺中市役所與舊城建築，再比較影片畫面與本文介紹的內容。</p>
+                <iframe
+                    width="480"
+                    height="270"
+                    src="https://www.youtube.com/watch?v=wRfIkc3I4KA"
+                    title="臺中市役所介紹影片"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <p>
+                    若播放器無法播放，請
+                    <a href="https://www.youtube.com/watch?v=wRfIkc3I4KA" target="_blank" rel="noopener noreferrer">在 YouTube 觀看相關介紹影片（另開分頁）</a>。
+                </p>
+                <p><small>影片為外部參考資料，現場狀況請以最新官方資訊為準。</small></p>
+            </section>
+
+            <section id="sources">
+                <h2>六、資料來源</h2>
+                <p>本報導依下列資料整理，參觀順序與觀察建議由示範作者規劃。</p>
+                <ul>
+                    <li><a href="https://nchdb.boch.gov.tw/assets/overview/historicalBuilding/20020701000004" target="_blank" rel="noopener noreferrer">國家文化資產網：臺中市役所</a></li>
+                    <li><a href="https://www.uyes.tw/" target="_blank" rel="noopener noreferrer">臺中市役所官方網站</a></li>
+                    <li><a href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E4%B8%AD%E5%B8%82%E5%BD%B9%E6%89%80" target="_blank" rel="noopener noreferrer">維基百科：臺中市役所</a></li>
+                </ul>
+                <p><small>資料整理日期：2026 年 10 月 7 日。</small></p>
+            </section>
+        </article>
+    </main>
+
+    <hr>
+    <!-- footer 是頁尾 -->
+    <footer>
+        <p>臺中市役所報導</p>
+        <p><a href="#top">回到頁首</a></p>
+    </footer>
+</body>
+</html>
